@@ -1,0 +1,250 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+* text,h1 :hover
+{
+    transform: translate(-50%,-50%);
+    cursor: pointer; /* when you go to the word the showing the pointer*/
+}
+html, body
+{
+    height: 100;
+    width: 200;
+}
+#main
+{
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+.front-page
+{
+    background-color: rgb(38,37,37);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    color: #fff;
+    animation-name: anim;
+    animation-duration: 2s;
+    position: relative;
+
+}
+@keyframes anim
+        {
+            from{background-color: black;}
+            to{background-color: blue;}
+        }
+.front-page #topheading
+{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+#topheading h5
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.front-page h1
+{
+   
+    /*margin-top: 300px;*/
+    display: flex; /* h1 sentences are coming center*/
+    justify-content: center; /* h1 sentences are coming center*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: 500;
+    width: 100%;
+
+}
+
+section
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: start;
+    
+  
+}
+
+
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* header ke boarder ki line or color width increase or decrease hoti hai */
+    padding: 20px; /* header ki height decrease and increas hoti hai*/
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+.creative
+{
+    margin-top: 150px;
+    font-size: 30px;
+    margin-left: 70px;
+   /* animation-delay: 3s;
+    transition: 2s;
+    transition-duration: 3s;
+    transition-delay: 2s;
+    overflow: hidden;
+    animation-name: anim 12s infinite;*/
+   animation: animate 3s ease-in-out infinite;
+   background-color: greenyellow;
+
+}
+@keyframes animate
+{
+ 0%{transform: translateY(-70px);} /* going down to up*/
+}
+/*@keyframes anim
+{
+    0%{margin-top: 0;}
+    16%{margin-top: -60px;}
+}*/
+.two
+{
+    margin-left: 200px;
+}
+.three
+{
+    margin-left: 580px;
+    font-style: italic;
+    color: red;
+}
+.four
+{
+    margin-left: 980px;
+}
+.sec 
+{
+           
+            display: flex;
+            place-items: center;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 100px;
+            flex-wrap: wrap; /* wrap means ekatra karane*/
+            gap:50px; 
+            flex-direction: row;  
+            flex-basis: 150px;
+            /*top: 50%;
+            left: 50%;   */  background-color: black;
+                     
+}
+.about
+{
+    font-size: 20px;
+    color: #fff;
+}
+.img
+{
+    margin-left: 80px;
+    border: brown 3px;
+    border-radius: 50%;
+    height: 250px;
+    display: flex;
+    /*justify-content: center;
+    padding: 2vw 6vw;
+    text-transform: capitalize;
+    align-items: center;
+    rotate: 10deg;
+    position: relative;
+    transform: translate(-20%,-5%) rotate(-5deg);
+    background-position: center;
+    background-size: cover; */
+}
+.aboutme
+{
+    /*align-items: center; /* sentences in coming in middle center*/
+    text-align: center; /* start le left side se sare sentence text are coming top center*/
+    /*margin-top: 150px; top se niche niche chala jata hai*/
+    justify-content: space-between;
+    
+
+}
+
+.button
+{
+    height: 50px;
+    width: 150px;
+    border: 1px;
+    border-radius: 25px;
+    background-color: brown;
+}
+.knowmore
+{
+    font: 16px;
+    
+    
+}
+.km
+{
+    display: flex;
+           /* place-items: center; /* place items center se thoda niche aata hai top se */
+            justify-content: center;      
+            flex-wrap: wrap; /* wrap means ekatra karane*/
+            gap: 200px; 
+            flex-direction: row;  
+            flex-basis: 150px;
+            margin-top: 10%;
+}
+.button1,.button2,.button3,.button4,.button5,.button6,.button7
+{
+    height: 50px;
+    width: 100px;
+    border: 1px;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: blue;
+    align-items: center; /* align item se text middle meain aata hai lekin vo right side mein hi rehata hai*/
+    justify-content: center;/* justify content se vo fir right side se box ya page ke middle mein aata hai*/
+    flex-basis: 150px;
+}
+.nextpage
+{
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.label
+{
+    border: 2px solid white;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.para
+{
+    
+    margin-left: 50px;
+}
+.footer
+{
+    margin-top: 45%;
+    margin-left: 80px;
+    
+}
